@@ -6,7 +6,7 @@ const Navbar = () => {
   const navItems = ["Home", "Services", "Pricing", "How It Works", "Blog"];
 
   return (
-    <nav className="sm:px-16 px-6 w-full fixed z-50  bg-white h-20 flex items-center justify-between font-yourfont">
+    <nav className="sm:px-16 px-6 w-full static sm:fixed z-50  bg-white h-20 flex items-center justify-between font-yourfont">
       <h1 className="text-4xl font-medium text-[#8c8b87]">LOGO</h1>
 
       <ul className="hidden md:flex gap-10 text-gray-600 text-base font-normal">
