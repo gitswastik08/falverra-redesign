@@ -1,14 +1,14 @@
 import React from "react";
 import Button from "./Button";
 
-import heroshape1 from "../assets/images/heroshape1.png";
+import heroshape1 from "../assets/images/Heroshape1.png";
 import herovector from "../assets/images/HeroVector.png";
 import dots from "../assets/images/dots.png";
 import layer from "../assets/images/layer.png";
 import layer2 from "../assets/images/layer2.png";
 import layer3 from "../assets/images/layer3.png";
 import layer4 from "../assets/images/layer4.png";
-import vector2 from "../assets/images/vector2.png";
+import vector2 from "../assets/images/Vector2.png";
 
 const Herosection = () => {
   return (
