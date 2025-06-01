@@ -6,7 +6,7 @@ const Navbar = () => {
   const navItems = ["Home", "Services", "Pricing", "How It Works", "Blog"];
 
   return (
-    <nav className="sm:px-16 px-6 w-full  bg-white h-20 flex items-center justify-between">
+    <nav className="sm:px-16 px-6 w-full  bg-white h-20 flex items-center justify-between font-yourfont">
       <h1 className="text-4xl font-medium text-[#8c8b87]">LOGO</h1>
 
       <ul className="hidden md:flex gap-10 text-gray-600 text-base font-normal">
@@ -21,10 +21,10 @@ const Navbar = () => {
       </ul>
 
       <div className="hidden md:flex gap-4">
-        <button className="px-5 py-2 text-[#c88f00e3] font-semibold rounded-[14px] ">
+        <button className="px-6 py-2 text-[#c88f00e3] font-medium rounded-[10px] ">
           Login
         </button>
-        <button className="px-5 py-2 text-[#c88f00e3] font-semibold border-2 border-[#c88f00e3] rounded-[14px] transition-all">
+        <button className="px-6 py-2 text-[#c88f00e3] font-medium border-2 border-[#c88f00e3] rounded-[10px] transition-all">
           Signup
         </button>
       </div>

@@ -7,7 +7,7 @@ const IconText = ({ icon, text }) => {
       <div className="p-3 flex items-center justify-center bg-[#ede2f9] rounded-lg">
         <img src={icon} alt="icon" className="w-6 h-6 sm:w-8 sm:h-8 object-contain" />
       </div>
-      <p className="text-gray-800 sm:text-lg">{text}</p>
+      <p className="text-gray-800 sm:text-xl font-[400] font-sans">{text}</p>
     </div>
   );
 };

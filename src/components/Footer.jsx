@@ -1,76 +1,112 @@
-import React from "react";
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaLinkedinIn,
-  FaInstagram,
-  FaYoutube,
-} from "react-icons/fa";
 
-const Footer = () => {
+
+import { Facebook, Twitter, Linkedin, Youtube, Instagram, MapPin, Phone, Mail, ArrowRight } from "lucide-react"
+
+import Button from "./Button"
+import { Link } from "react-router-dom"
+
+export default function Footer() {
   return (
-    <footer className="bg-[#1a1306] sm:w-full text-white px-6 py-12 text-sm">
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-4 gap-10">
+    
+    <footer className="bg-[#171100] text-white sm:py-12 py-6 px-4 sm:px-8">
+      <div className="container mx-auto">
+        {/* Main Footer Content */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-10 items-end">
+          {/* Logo and Description */}
+          <div className="w-fit">
+            <h2 className="  text-3xl sm:text-5xl font-bold mb-4">LOGO</h2>
+            <p className="text-gray-300 w-[90%] text-xs sm:text-base sm:w-[22vw] font-light font-sans leading-snug">
+              This is a branch of GD Goenka Healthcare Academy, operating under GD Goenka's national framework and
+              academic standards.
+            </p>
+          </div>
 
-       
-        <div className="sm:col-span-1">
-          <h2 className="text-xl font-bold mb-2">LOGO</h2>
-          <p className="text-gray-400 leading-relaxed">
-            This is a branch of GD Goenka Healthcare Academy, operating under GD Goenka’s national framework and academic standards.
-          </p>
-        </div>
+          {/* Contact Information */}
+          <div className=" space-y-2 sm:space-y-4 text-[#ffffffad]">
+            <div className="flex items-start space-x-1 sm:space-x-3">
+              <MapPin className="h-5 w-5 text-white mt-0.5" />
+              <span>Opp. XYZ Landmark, Siliguri, WB</span>
+            </div>
+            <div className="flex items-center space-x-3">
+              <Phone className="h-5 w-5 text-white" />
+              <span>(123) 456-7890</span>
+            </div>
+            <div className="flex items-center space-x-3">
+              <Mail className="h-5 w-5 text-white" />
+              <span>example@gmail.com</span>
+            </div>
 
-       
-        <div className="space-y-2">
-          <div className="text-gray-300">📍 Opp. XYZ Landmark, Siliguri, WB</div>
-          <div className="text-gray-300">📞 (123) 456-7890</div>
-          <div className="text-gray-300">✉️ example@gmail.com</div>
+            {/* Social Media */}
+            <div className="pt-2 flex gap-3">
+              <p className="mb-2">Social Media:</p>
+              <div className="flex space-x-4">
+                <Link href="#" className="hover:text-yellow-400 transition-colors">
+                  <Facebook className="h-5 w-5" />
+                </Link>
+                <Link href="#" className="hover:text-yellow-400 transition-colors">
+                  <Twitter className="h-5 w-5" />
+                </Link>
+                <Link href="#" className="hover:text-yellow-400 transition-colors">
+                  <Linkedin className="h-5 w-5" />
+                </Link>
+                <Link href="#" className="hover:text-yellow-400 transition-colors">
+                  <Youtube className="h-5 w-5" />
+                </Link>
+                <Link href="#" className="hover:text-yellow-400 transition-colors">
+                  <Instagram className="h-5 w-5" />
+                </Link>
+              </div>
+            </div>
+          </div>
 
-          <div className="flex items-center gap-3 mt-2">
-            <span className="text-white">Social Media:</span>
-            <FaFacebookF className="hover:text-yellow-400 cursor-pointer" />
-            <FaTwitter className="hover:text-yellow-400 cursor-pointer" />
-            <FaLinkedinIn className="hover:text-yellow-400 cursor-pointer" />
-            <FaInstagram className="hover:text-yellow-400 cursor-pointer" />
-            <FaYoutube className="hover:text-yellow-400 cursor-pointer" />
+          {/* Subscribe Form */}
+          <div className="bg-[#2e2919] w-fit px-6 py-3 sm:py-6 rounded-lg">
+            <h3 className="text-xl font-medium mb-4">Subscribe</h3>
+            <div className="flex mb-4">
+              <input
+                type="email"
+                placeholder="Email address"
+                className="bg-white text-black rounded-r-none px-6 py-3 rounded-[10px] focus:outline-none focus-visible:ring-0 focus-visible:ring-offset-0 border-0"
+              />
+              <button className="bg-yellow-400 hover:bg-yellow-500 text-black rounded-l-none rounded-[10px] px-3">
+                <ArrowRight className="h-5 w-5" />
+              </button>
+            </div>
+            <p className="text-xs font-[100] font-sans text-gray-300 sm:w-[20vw]">
+              Hello, we are Lift Media. Our goal is to translate the positive effects from revolutionizing how companies
+              engage with their clients & their team.
+            </p>
           </div>
         </div>
 
-        
-        <div className="md:col-span-1 md:col-start-4 bg-[#2b2412] p-4 rounded-lg space-y-3">
-          <h4 className="text-white font-semibold">Subscribe</h4>
-          <div className="flex">
-            <input
-              type="email"
-              placeholder="Email address"
-              className="px-3 py-2 rounded-l-md outline-none text-black w-full"
-            />
-            <button className="bg-yellow-400 px-4 rounded-r-md text-white font-bold">
-              ➤
-            </button>
+        {/* Divider */}
+        <div className="border-t border-gray-700 my-6"></div>
+
+        {/* Footer Bottom */}
+        <div className="flex flex-col sm:flex-row justify-between items-center">
+          {/* Navigation Links */}
+          <div className="flex flex-wrap justify-center sm:justify-start gap-6 mb-4 text-[#ffffffbe] sm:mb-0">
+            <Link href="#" >
+              Home
+            </Link>
+            <Link href="#" >
+              Service
+            </Link>
+            <Link href="#" >
+              Pricing
+            </Link>
+            <Link href="#" >
+              How It Works
+            </Link>
+            <Link href="#" >
+              Blog
+            </Link>
           </div>
-          <p className="text-gray-400 text-xs leading-relaxed">
-            Hello, we are Lift Media. Our goal is to translate the positive effects from revolutionary
-            business companies into their clients & their team.
-          </p>
-        </div>
-      </div>
 
-      <hr className="my-8 border-gray-700" />
-
-      
-      <div className="flex sm:px-8 flex-col sm:flex-row justify-between items-center text-gray-400">
-        <div className="flex gap-6 text-xs mb-4 sm:mb-0">
-          <a href="#">Home</a>
-          <a href="#">Service</a>
-          <a href="#">Pricing</a>
-          <a href="#">How It Works</a>
-          <a href="#">Blog</a>
+          {/* Copyright */}
+          <div className="text-sm text-gray-400">Copyright © 2025 • Lift Media Inc.</div>
         </div>
-        <p className="text-xs">&copy; 2025 • Lift Media Inc.</p>
       </div>
     </footer>
-  );
-};
-
-export default Footer;
+  )
+}

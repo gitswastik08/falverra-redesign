@@ -3,4 +3,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;  
+ ::-webkit-scrollbar{
+    display: none;
+ }
+
+ @font-face {
+  font-family: 'YourFont';
+  src: url('./assets/fonts/IBMPlexSansCondensed-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 

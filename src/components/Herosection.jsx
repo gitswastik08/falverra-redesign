@@ -8,26 +8,27 @@ import layer from "../assets/images/layer.png";
 import layer2 from "../assets/images/layer2.png";
 import layer3 from "../assets/images/layer3.png";
 import layer4 from "../assets/images/layer4.png";
+import vector2 from "../assets/images/vector2.png";
 
 const Herosection = () => {
   return (
-    <div className="flex  w-full h-full flex-col gap-14 items-center sm:pl-8 sm:flex-row sm:gap-0 sm:h-full sm:py-36 py-16 relative ">
+    <div className="flex overflow-hidden bg-[#fffbf4]  w-full h-screen  flex-col gap-4 items-center sm:pl-10 sm:flex-row sm:gap-0 sm:py-36 py-16 relative ">
       <img
         src={herovector}
         alt="vector"
-        className="absolute w-[20vw] sm:w-[10vw] top-[4vw] left-0 sm:top-[7vw] sm:left-[0vw]"
+        className="absolute w-[20vw]  top-[4vw] left-0 sm:w-[10vw] sm:top-[7vw] sm:left-[0vw]"
       />
-      <div className="flex w-full relative flex-col sm:gap-10 gap-4 pl-8 ">
-        <h1 className="sm:text-[62px] text-3xl text-[#1A1A1A]  sm:leading-tight font-bold">
+      <div className="flex w-full relative flex-col sm:gap-10 gap-6 pl-8 ">
+        <h1 className="sm:text-[62px] text-4xl text-[#1A1A1A]  sm:leading-tight leading-tight font-bold">
           One Place. All Your <br /> Business Essentials. <br />{" "}
           <span className="text-[#FDCB14] font-yourfont">Automated.</span>
         </h1>
         <img
           src={heroshape1}
           alt="icon"
-          className="absolute w-[25vw] sm:w-[15vw] top-[25vw] left-[30vw] sm:top-[14vw] sm:left-[14vw] "
+          className="absolute w-[30vw]  top-[29vw] left-[30vw] sm:w-[15vw] sm:top-[14vw] sm:left-[12vw] "
         />
-        <p className="text-xs sm:text-xl font-[400] text-[#000000a6]">
+        <p className="text-lg sm:text-xl font-[400] text-[#000000a6]">
           Get ready-to-use solutions like funnels, invoices, calendars, and
           offer letters—on-demand or on a subscription.
         </p>
@@ -36,28 +37,42 @@ const Herosection = () => {
           <Button>View Plans</Button>
         </div>
       </div>
-      <div className=" w-full  overflow-hidden relative sm:h-[60vh] sm:p-24 ">
-        <div className=" absolute -right-10 bottom-0 sm:h-[36vw] sm:w-[30vw] rounded-tr-full bg-[#fcf6e8]" />
-        <img src={dots} alt="" className="absolute left-0 bottom-[2vw] w-[25%]" />
+
+       <img
+          src={dots}
+          alt=""
+          className="absolute  left-[2%] bottom-[10%] w-[30%] sm:left-[45vw] sm:bottom-[12vw] sm:w-[13%]"
+        />
+
+      <div className=" w-full p-2 mt-[10vw]  h-[50%] relative sm:min-h-[60vh] sm:p-24 ">
+
+        <div className=" absolute sm:-right-[10vw] sm:bottom-0 sm:h-[40vw] sm:w-[40vw] rounded-tr-full  sm:bg-[#fcf6e8]" />
+       
+       
         <img
           src={layer}
           alt=""
-          className="absolute  rounded-[22px] border border-blue-200 w-[42%] sm:left-[6vw] sm:bottom-[4vw]"
+          className="absolute  rounded-[22px] border border-blue-200 w-[45%] left-[12vw] bottom-[8vw] sm:w-[40%] sm:left-[3vw] sm:bottom-[7vw]"
         />
         <img
           src={layer2}
           alt=""
-          className="absolute  rounded-[14px] w-[30%] sm:left-[20vw] sm:top-[0vw]"
+          className="absolute border  rounded-[14px] right-[30vw] top-[10vw] w-[30%] sm:w-[30%] sm:left-[20vw] sm:top-[0vw]"
         />
-         <img
+        <img
           src={layer3}
           alt=""
-          className="absolute  rounded-[14px] w-[35%] border border-red-500 sm:right-[4vw] sm:top-[13vw]"
+          className="absolute border border-red-500  rounded-[14px] right-[2vw] top-[37vw] w-[35%] sm:w-[37%] sm:right-[3vw] sm:top-[13vw]"
         />
-           <img
+        <img
           src={layer4}
           alt=""
-          className="absolute  rounded-[14px] w-[25%] sm:right-[8vw] sm:bottom-[3vw]"
+          className="absolute rounded-[14px] w-[25%] right-[8vw] bottom-[15vw] sm:w-[25%] sm:right-[10vw] sm:bottom-[5vw]"
+        />
+        <img
+          src={vector2}
+          alt=""
+          className="absolute  rounded-[14px] w-[22%]  left-[22vw] top-[25vw] sm:w-[22%] sm:left-[8vw] sm:top-[1vw]"
         />
       </div>
     </div>
