@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./Button";
 
-import heroshape1 from "../assets/images/Heroshape1.png";
+import heroshape1 from "../assets/images/HeroShape1.png";
 import herovector from "../assets/images/HeroVector.png";
 import dots from "../assets/images/dots.png";
 import layer from "../assets/images/layer.png";
