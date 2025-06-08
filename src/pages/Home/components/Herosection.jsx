@@ -59,7 +59,7 @@ const Herosection = () => {
           className="absolute rounded-[14px] w-[25%] right-[8vw] bottom-[15vw] sm:w-[25%] sm:right-[10vw] sm:bottom-[5vw]"
         />
         <img
-          src="https://ik.imagekit.io/bqzlidc77g/falverra-redesign/Vector2.png?updatedAt=1748846343628"
+          src="https://ik.imagekit.io/bqzlidc77g/falverra-redesign/Vector6.png?updatedAt=1749379631894"
           alt=""
           className="absolute  rounded-[14px] w-[22%]  left-[22vw] top-[25vw] sm:w-[22%] sm:left-[8vw] sm:top-[1vw]"
         />
