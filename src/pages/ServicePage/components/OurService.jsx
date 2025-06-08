@@ -89,7 +89,7 @@ function ServiceCard({ title, description, deliveryTime, image }) {
     navigate("/service-details"); 
   };
   return (
-    <div onClick={handleClick} className="bg-[#fffbf4] rounded-2xl shadow-lg border border-gray-300 overflow-hidden cursor-pointer">
+    <div  className="bg-[#fffbf4] rounded-2xl shadow-lg border border-gray-300 overflow-hidden ">
       {/* Card Image */}
       <div className="h-48 sm:h-40 bg-gray-100 overflow-hidden">
         <img src={image || "/placeholder.svg"} alt={title} className="w-full h-full object-cover" />
@@ -103,7 +103,7 @@ function ServiceCard({ title, description, deliveryTime, image }) {
           <span className="text-gray-700 text-sm font-medium">Time: </span>
           <span className="text-black text-sm font-medium">{deliveryTime}</span>
         </div>
-        <button className="w-full sm:w-auto bg-[#fbbf24] hover:bg-[#f59e0b] text-black text-sm font-normal py-2 px-6 rounded-lg transition-colors">
+        <button onClick={handleClick} className="w-full sm:w-auto bg-[#fbbf24] hover:bg-[#f59e0b] text-black text-sm font-normal py-2 px-6 rounded-lg transition-colors">
           Get Started
         </button>
       </div>

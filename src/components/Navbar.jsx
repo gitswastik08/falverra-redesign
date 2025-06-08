@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; 
+import Thankyou from "../pages/ThankyouPage/Thankyou";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const navigate = useNavigate(); 
 
-  const navItems = ["Home", "Services", "Pricing", "How It Works", "Blog"];
+  const navItems = ["Home", "Services", "Pricing", "Contact", "Payment" ,"Thankyou","Result-delivery"];
 
   const handleNavigation = (item) => {
     const path =
