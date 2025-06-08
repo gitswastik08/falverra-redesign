@@ -17,7 +17,7 @@ const Herosection = () => {
         <img
           src="https://ik.imagekit.io/bqzlidc77g/falverra-redesign/HeroShape1.png?updatedAt=1748846348342"
           alt="icon"
-          className="absolute w-[30vw]  top-[35vw] left-[30vw] sm:w-[15vw] sm:top-[14vw] sm:left-[12vw] "
+          className="absolute w-[30vw]  top-[30vw] left-[30vw] sm:w-[15vw] sm:top-[14vw] sm:left-[12vw] "
         />
         <p className="text-lg sm:text-xl font-[400] text-[#000000a6]">
           Get ready-to-use solutions like funnels, invoices, calendars, and
