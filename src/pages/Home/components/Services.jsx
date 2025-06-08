@@ -1,11 +1,7 @@
 import React from "react";
 
 // Import images
-import icon1 from "../assets/images/icon1.png";
-import icon2 from "../assets/images/icon2.png";
-import icon3 from "../assets/images/icon3.png";
-import icon4 from "../assets/images/icon4.png";
-import icon5 from "../assets/images/icon5.png";
+
 
 const Services = () => {
   const services = [
@@ -13,7 +9,7 @@ const Services = () => {
       title: "Social Media\nCalendar",
       desc: "Get ready-to-use solutions like funnels.",
       btnText: "Try Now",
-      image: icon1,
+      image: "https://ik.imagekit.io/bqzlidc77g/falverra-redesign/icon1.png?updatedAt=1748846340665",
       bgColor: "bg-blue-50",
       textColor: "text-blue-900",
       hw: "sm:h-40 sm:w-40",
@@ -23,7 +19,7 @@ const Services = () => {
       title: "Offer Letter\nCreator",
       desc: "Get ready-to-use solutions like funnels.",
       btnText: "Try Now",
-      image: icon2,
+      image: "https://ik.imagekit.io/bqzlidc77g/falverra-redesign/icon2.png?updatedAt=1748846340752",
       bgColor: "bg-yellow-50",
       textColor: "text-yellow-800",
       hw: "sm:h-40 sm:w-40",
@@ -33,7 +29,7 @@ const Services = () => {
       title: "Business\nProblem Solver",
       desc: "Get ready-to-use solutions like funnels.",
       btnText: "Try Now",
-      image: icon3,
+      image: "https://ik.imagekit.io/bqzlidc77g/falverra-redesign/icon3.png?updatedAt=1748846340992",
       bgColor: "bg-green-50",
       textColor: "text-green-800",
       hw: " h-[22vh] w-[20vw] sm:h-96 sm:w-40",
@@ -43,7 +39,7 @@ const Services = () => {
       title: "Invoice\nGenerator",
       desc: "Get ready-to-use solutions like funnels.",
       btnText: "Try Now",
-      image: icon4,
+      image: "https://ik.imagekit.io/bqzlidc77g/falverra-redesign/icon4.png?updatedAt=1748846341116",
       bgColor: "bg-red-50",
       textColor: "text-red-800",
       hw: "sm:h-40 sm:w-40",
@@ -53,7 +49,7 @@ const Services = () => {
       title: "Funnel\nBuilder",
       desc: "Get ready-to-use solutions like funnels.",
       btnText: "Try Now",
-      image: icon5,
+      image: "https://ik.imagekit.io/bqzlidc77g/falverra-redesign/icon5.png?updatedAt=1748846340863",
       bgColor: "bg-purple-50",
       textColor: "text-purple-800",
       hw: "sm:h-40 sm:w-40 ",

@@ -1,18 +1,30 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom"; 
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const navigate = useNavigate(); 
 
   const navItems = ["Home", "Services", "Pricing", "How It Works", "Blog"];
 
+  const handleNavigation = (item) => {
+    const path =
+      item.toLowerCase() === "home"
+        ? "/"
+        : "/" + item.toLowerCase().replace(/\s+/g, "-");
+    navigate(path);
+    setToggle(false);
+  };
+
   return (
-    <nav className="sm:px-16 px-6 w-full static sm:fixed z-50  bg-[#fffbf4] h-20 flex items-center justify-between font-yourfont">
+    <nav className="sm:px-16 px-6 w-full static sm:fixed z-50  sm:bg-transparent sm:backdrop-blur-md bg-[#fffbf4] h-20 flex items-center justify-between font-yourfont">
       <h1 className="text-4xl font-medium text-[#8c8b87]">LOGO</h1>
 
       <ul className="hidden md:flex gap-10 text-gray-600 text-base font-normal">
         {navItems.map((item) => (
           <li
             key={item}
+            onClick={() => handleNavigation(item)} // ✅ Routing
             className="hover:text-black cursor-pointer transition-colors duration-200"
           >
             {item}
@@ -53,6 +65,7 @@ const Navbar = () => {
           {navItems.map((item) => (
             <p
               key={item}
+              onClick={() => handleNavigation(item)} // ✅ Routing
               className="text-lg text-gray-700 font-medium hover:text-black cursor-pointer transition-all"
             >
               {item}

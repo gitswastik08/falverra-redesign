@@ -1,31 +1,30 @@
 import React from "react";
 
-
-
-const Feedback = ({feedbackHeading,f1,f2,f3}) => {
-  const feedbacks = [
+const feedbacks = [
   {
     name: "John Carter",
     role: "CEO at Rento",
     img: "https://randomuser.me/api/portraits/men/32.jpg",
     rating: 4.5,
-    text: f1,
+    text: "Renting a car from nova ride was a great decision. Not only did I get a reliable and comfortable vehicle, but the prices were also very competitive.",
   },
   {
     name: "John Carter",
     role: "CEO at Rento",
     img: "https://randomuser.me/api/portraits/men/33.jpg",
     rating: 4.5,
-    text: f2,
+    text: "Renting a car from nova ride was a great decision. Not only did I get a reliable and comfortable vehicle, but the prices were also very competitive.",
   },
   {
     name: "John Carter",
     role: "CEO at Rento",
     img: "https://randomuser.me/api/portraits/men/34.jpg",
     rating: 4.5,
-    text: f3,
+    text: "Renting a car from nova ride was a great decision. Not only did I get a reliable and comfortable vehicle, but the prices were also very competitive.",
   },
 ];
+
+const Feedback = () => {
   return (
     <section className="relative  sm:w-full bg-[#F9A826] sm:py-20 py-16  text-white overflow-hidden">
       {/* Background lines  */}
@@ -56,7 +55,8 @@ const Feedback = ({feedbackHeading,f1,f2,f3}) => {
       <div className="relative z-10 max-w-6xl mx-auto text-center">
         <p className="text-lg font-normal mb-2">-Testimonials-</p>
         <h2 className="text-3xl sm:text-6xl font-semibold mb-12">
-          {feedbackHeading}
+          What our customers are <br className="hidden sm:block" />
+          saying about us
         </h2>
 
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
@@ -86,10 +86,10 @@ const Feedback = ({feedbackHeading,f1,f2,f3}) => {
         </div>
 
         <div className="sm:flex justify-center gap-14 hidden  mt-10">
-          <button className="w-12 h-12 bg-white text-[#C89100] rounded-full shadow hover:bg-orange-100">
+          <button className="w-12 h-12 bg-white text-black rounded-full shadow hover:bg-orange-100">
             <i class= "ri-arrow-left-s-line text-3xl font-thin"></i>
           </button>
-          <button className="w-12 h-12 bg-white text-[#C89100] rounded-full shadow hover:bg-orange-100">
+          <button className="w-12 h-12 bg-white text-black rounded-full shadow hover:bg-orange-100">
             <i class="ri-arrow-right-s-line text-3xl"></i>
           </button>
         </div>

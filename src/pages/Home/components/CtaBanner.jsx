@@ -1,7 +1,7 @@
 import React from "react";
-const bgsvg = "https://ik.imagekit.io/bqzlidc77g/falverra-redesign/Groupsvg.png?updatedAt=1748846346962";
+import bgsvg from "https://ik.imagekit.io/bqzlidc77g/falverra-redesign/Groupsvg.png?updatedAt=1748846346962";
 
-const CtaBanner = ({childrenText,childrenButton}) => {
+const CtaBanner = () => {
   return (
     <section className="px-8 w-full py-28">
       <div
@@ -19,11 +19,11 @@ const CtaBanner = ({childrenText,childrenButton}) => {
         {/* ✅ Content above the overlay */}
         <div className="relative z-10">
           <h2 className="text-[#fff] text-3xl sm:text-5xl font-semibold mb-8 sm:leading-relaxed">
-            {childrenText}
+            Your Time is Precious. Let Falverra <br className="hidden sm:block" /> Work For You.
           </h2>
 
           <button className="bg-white text-black font-light px-6 py-3 sm:px-14 sm:py-4 rounded-[8px] ">
-          { childrenButton}
+            Start Now
           </button>
         </div>
       </div>
